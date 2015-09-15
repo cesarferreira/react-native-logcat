@@ -9,15 +9,16 @@ Gem::Specification.new do |spec|
   spec.authors       = ["cesar ferreira"]
   spec.email         = ["cesar.manuel.ferreira@gmail.com"]
 
-  spec.summary       = %q{logcat for react native}
-  spec.description   = %q{logcat for react native}
+  spec.summary       = %q{Colored logcat for react native}
+  spec.description   = %q{Colored logcat for react native}
   spec.homepage      = "https://github.com/cesarferreira/react-native-logcat"
+  spec.license       = 'MIT'
 
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "bin"
+  spec.bindir        = 'bin'
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 2.0.0'
 
