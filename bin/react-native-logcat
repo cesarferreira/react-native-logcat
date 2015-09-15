@@ -12,5 +12,6 @@ trap("SIGINT") { throw :ctrl_c }
     raise
   rescue Exception => e
     puts "Ok, i'll go!"
+    puts e
   end
  end
