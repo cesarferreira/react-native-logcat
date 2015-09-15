@@ -1,6 +1,6 @@
 # react-native logcat [![Gem Version](http://img.shields.io/gem/v/react-native-logcat.svg?style=flat)](http://badge.fury.io/rb/react-native-logcat)
 
-> filter only the react native logcat
+> Filter the react native android logcat
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/cesarferreira/react-native-logcat/master/extras/screenshot.png" width="100%" />
