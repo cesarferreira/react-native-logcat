@@ -22,6 +22,10 @@ module ReactNativeLogCat
       return add_timestamp(str.red)
     end
 
+    if str[0..1] == "I/"
+      return add_timestamp(str.blue)
+    end
+
     return add_timestamp(str)
   end
 
