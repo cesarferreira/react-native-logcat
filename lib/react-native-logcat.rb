@@ -8,18 +8,26 @@ module ReactNativeLogCat
     return "[#{timestamp}] #{str}"
   end
 
+  def self.clean(str)
+    return str[/^[A-Z]\/.*\):(.*)/,1]
+  end
+
   def self.transform_line(str)
 
     if str[0..1] == "D/"
-      return add_timestamp(str.green)
+      return add_timestamp(clean(str).green)
     end
 
     if str[0..1] == "W/"
-      return add_timestamp(str.yellow)
+      return add_timestamp(clean(str).yellow)
     end
 
     if str[0..1] == "E/"
-      return add_timestamp(str.red)
+      return add_timestamp(clean(str).red)
+    end
+
+    if str[0..1] == "I/"
+      return add_timestamp(clean(str).white)
     end
 
     return add_timestamp(str)
