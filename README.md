@@ -8,7 +8,11 @@
 
 ## Usage
 
-> react-native-logcat
+Run the command:
+
+```
+react-native-logcat
+```
 
 ## Installation
 
@@ -16,7 +20,8 @@
 
 **Requirements `(if you haven't already)`:**
 
-> Android SDK in your $PATH [(how-to)](http://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
+* Android SDK in your $PATH [(how-to)](http://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
+* Ruby Bundler, install using `gem install bundler`
 
 ## Contributing
 
